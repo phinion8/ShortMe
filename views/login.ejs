@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <style>
+            body{
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+      </style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ShortMe - Register</title>
+</head>
+<body>
+      <h1>Login With Existing Account</h1>
+      <% if (locals.error) { %>
+       <p><%= error %></p>
+      <% } %>
+      <form method="post" action="/user/login">
+            <label>Your Email</label>
+            <input type="email" name="email"/>
+            <label>Password</label>
+            <input type="password" name="password"/>
+            <button type="submit">Register</button>
+      </form>
+</body>
+</html>
